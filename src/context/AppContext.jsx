@@ -1,11 +1,10 @@
-import {createContext} from "react"
+import { createContext } from "react";
 export const AppContext = createContext()
-export const AppContextProvider = (props) => {
-    const value = {
+export const AppContextProvider = (props) =>{
+    const value={
 
     }
-
-    return (
+    return(
         <AppContext.Provider value={value}>
             {props.children}
         </AppContext.Provider>

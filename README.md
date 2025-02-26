@@ -1,8 +1,42 @@
-# React + Vite
+# Edutech Application Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This is an edutech application designed to provide educational resources and courses to students and educators.
 
-Currently, two official plugins are available:
+## Components and Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### App.jsx
+- **Description**: Main entry point of the application that sets up routing for different pages.
+- **Routes**:
+  - `/`: Home page
+  - `/course-list`: List of courses
+  - `/my-enrollments`: User's enrolled courses
+  - `/course/:id`: Details of a specific course
+  - `/player/:courseId`: Player interface for course content
+  - `/educator`: Educator dashboard with nested routes for managing courses and students.
+
+### Home.jsx
+- **Description**: Displays the home page with a welcome message.
+
+### CoursesList.jsx
+- **Description**: Displays a list of available courses.
+
+### MyEnrollments.jsx
+- **Description**: Displays the user's enrolled courses with a brief description.
+
+### CourseDetails.jsx
+- **Description**: Currently empty, intended for displaying detailed information about a specific course.
+
+### Player.jsx
+- **Description**: Displays the player interface for course content.
+
+## Usage Instructions
+To run the application, navigate to the project directory and use the following command:
+```
+npm start
+```
+
+## Future Enhancements
+- Implement functionality for the `CourseDetails` component.
+- Add features for course management in the educator dashboard.
+- Enhance the player interface for better user experience.
